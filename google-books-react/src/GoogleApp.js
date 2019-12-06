@@ -3,8 +3,10 @@ import { Button } from 'reactstrap';
 import { render } from 'react-dom';
 import './index.css';
 
-const API='https://www.googleapis.com/books/v1/volumes?q=';
 const DEFAULT_QUERY='Gene Wolfe';
+
+// Google API
+const API='https://www.googleapis.com/books/v1/volumes?q=';
 
 class App extends React.Component {
 
@@ -17,8 +19,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(encodeURI(API + DEFAULT_QUERY));
-    fetch(encodeURI(API + DEFAULT_QUERY))
+    var requestURL = API + DEFAULT_QUERY + "&maxResults=40";
+    fetch(encodeURI(requestURL))
       .then(response => response.json())
       .then(data => this.setState({
         items: data.items
@@ -70,8 +72,16 @@ class Book extends React.Component {
       desc = "";
     }
 
+    var imageLink = this.props.apiEntry.volumeInfo.imageLinks === undefined
+        ? ""
+        : `${this.props.apiEntry.volumeInfo.imageLinks.thumbnail}`;
+
     return (
       <div>
+        <img
+          src={imageLink}
+          alt={this.props.apiEntry.volumeInfo.title}>
+        </img>
         <h3>{this.props.apiEntry.volumeInfo.title}</h3>
         {descButton}
         <br/>
