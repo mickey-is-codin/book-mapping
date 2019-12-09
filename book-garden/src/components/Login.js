@@ -27,28 +27,19 @@ function Banner() {
         <div className="page-main-register col-6 align-self-center">
           <h1 className="banner-head justify-center">Login</h1>
           <div className="form-group">
-            <form className="form-inline px-4 justify-content-around">
+            <form className="form-inline justify-content-around">
 
-              <label
-                className="sr-only"
-                htmlFor="userName">
-                  Username/Email
-              </label>
               <input
                 type="text"
-                className="form-control register-field"
-                placeholder="Enter Username/Email"></input>
+                className="form-control register-field px-1"
+                placeholder="username/email">
+              </input>
 
-              <label
-                className="sr-only"
-                htmlFor="passwd">
-                  Password
-              </label>
               <input
                 type="password"
-                className="form-control register-field"
-                placeholder="Enter Password"></input>
-              <br/>
+                className="form-control register-field  px-1"
+                placeholder="password">
+              </input>
 
             </form>
           </div>
