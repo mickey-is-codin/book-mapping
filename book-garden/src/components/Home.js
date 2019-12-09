@@ -29,11 +29,17 @@ function Banner() {
         <div className="page-left col-1">
         </div>
         <div className="page-main col-6 align-self-center">
-          <h1 className="">Book Garden</h1>
-          <p className="lead">Create a new graph or garden</p>
-          <small className="footnote">
-            <Link to="/register">Sign Up</Link>  Already a Member? <Link to="/login">Sign In</Link>
-          </small>
+          <div className="my-4">
+            <h1 className="banner-head">Book Garden</h1>
+          </div>
+          <div className="my-4">
+            <a className="btn btn-outline-success" href="/build">Start Planting</a>
+          </div>
+          <div className="my-4">
+            <small className="footnote">
+              <Link to="/register">Sign Up</Link>  Already a Member? <Link to="/login">Sign In</Link>
+            </small>
+          </div>
         </div>
         <div className="page-right col-1">
         </div>

@@ -25,8 +25,7 @@ function Banner() {
         <div className="page-left col-1">
         </div>
         <div className="page-main col-6 align-self-center">
-          <h1 className="">404 - Not Found</h1>
-          <p className="lead">Create a new graph or garden</p>
+          <h1 className="banner-head">404 - Not Found</h1>
         </div>
         <div className="page-right col-1">
         </div>

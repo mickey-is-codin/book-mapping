@@ -25,8 +25,12 @@ function Banner() {
         <div className="page-left col-1">
         </div>
         <div className="page-main col-6 align-self-center">
-          <h1 className="">Build</h1>
-          <p className="lead">Create a new graph or garden</p>
+          <div className="my-4">
+            <input
+              type="search"
+              className="search-field form-control"
+              placeholder="Search for an author or book..."/>
+          </div>
         </div>
         <div className="page-right col-1">
         </div>
