@@ -26,6 +26,7 @@ function Banner() {
         </div>
         <div className="page-main-register col-6 align-self-center">
           <h1 className="banner-head justify-center">Login</h1>
+          <br/>
           <div className="form-group">
             <form className="form-inline justify-content-around">
 

@@ -28,9 +28,10 @@ function Banner() {
       <main className="page-meat row justify-content-around d-flex">
         <div className="page-left col-1">
         </div>
-        <div className="page-main col-6 align-self-center">
+        <div className="page-main col-4 align-self-center">
           <div className="my-4">
-            <h1 className="banner-head">Book Garden</h1>
+            <h1 className="banner-head">Literary Garden</h1>
+            <br/>
           </div>
           <div className="my-4">
             <a className="btn btn-outline-success" href="/build">Start Planting</a>
