@@ -37,12 +37,20 @@ html, body {
 .page-main {
   color: #efefefdd;
   background-color: #2c2d36dd;
+  text-align: center;
 }
 .page-left {
   background-color: #2c8fd100;
 }
 .page-right {
   background-color: #d42a5700;
+}
+
+.footnote {
+  color: #efefef20;
+}
+.footnote-link {
+  color: #4abd6620;
 }
 
 /*

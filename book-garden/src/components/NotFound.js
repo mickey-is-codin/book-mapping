@@ -3,7 +3,7 @@ import '../index.css';
 
 import Background from './Background';
 
-class Register extends React.Component {
+class NotFound extends React.Component {
   render() {
     return(
       <div>
@@ -25,7 +25,7 @@ function Banner() {
         <div className="page-left col-1">
         </div>
         <div className="page-main col-6 align-self-center">
-          <h1 className="">Sign Up</h1>
+          <h1 className="">404 - Not Found</h1>
           <p className="lead">Create a new graph or garden</p>
         </div>
         <div className="page-right col-1">
@@ -39,4 +39,4 @@ function Banner() {
   );
 }
 
-export default Register;
+export default NotFound;
