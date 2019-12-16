@@ -61,20 +61,36 @@ html, body {
   color: #4abd66dd;
 }
 
-.search-field:focus {
-  background-color: #2c2d36dd;
-  border: 0;
-  color: #4abd66dd;
+/*
+ * Search
+ */
+.search {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .search-field {
-  background-color: #2c2d36dd;
+  width: 90%;
+  padding: 0.75em 1em;
+  box-sizing: border-box;
+  border: solid 0px;
+  font-family: 'Roboto Mono';
+  font-size: 4rem;
+  outline: none;
+  border-radius: 3px;
+  margin-bottom: 1em;
   text-align: center;
-  border: 0;
-}
-.search-help {
-  color: #4abd66dd;
+  background-color: #4abd6600;
+  color: #4abd66;
 }
 
+/*
+ * Register
+ */
 .register-field:focus {
   background-color: #2c2d36dd;
   border-color: #4abd66dd;
@@ -84,7 +100,6 @@ html, body {
   background-color: #2c2d36dd;
   border-color: #4abd66dd;
 }
-
 .footnote {
   color: #efefef20;
 }
