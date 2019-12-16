@@ -11,14 +11,14 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Banner/>
+        <HomePage/>
         <Background/>
       </div>
     );
   }
 }
 
-function Banner() {
+function HomePage() {
   return (
     <div className="wrapper d-flex flex-column">
 

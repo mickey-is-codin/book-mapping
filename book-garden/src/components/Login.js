@@ -7,14 +7,14 @@ class Login extends React.Component {
   render() {
     return(
       <div>
-        <Banner/>
+        <LoginPage/>
         <Background/>
       </div>
     );
   }
 }
 
-function Banner() {
+function LoginPage() {
   return (
     <div className="wrapper d-flex flex-column">
 

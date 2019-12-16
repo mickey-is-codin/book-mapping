@@ -7,14 +7,14 @@ class Register extends React.Component {
   render() {
     return(
       <div>
-        <Banner/>
+        <RegisterPage/>
         <Background/>
       </div>
     );
   }
 }
 
-function Banner() {
+function RegisterPage() {
   return (
     <div className="wrapper d-flex flex-column">
 
